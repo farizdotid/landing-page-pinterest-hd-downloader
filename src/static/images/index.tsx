@@ -1,7 +1,7 @@
 import { type FC } from "react";
 import PreviewPng from "./preview.webp";
 import HeroImg from "./hero-img.webp";
-import Logo from "./logo.webp";
+import Logo from "./icon_tools_webp.webp";
 
 export const images = {
     preview: PreviewPng,

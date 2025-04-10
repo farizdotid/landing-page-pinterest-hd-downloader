@@ -8,7 +8,7 @@ type HeroProps = {
 
 export const Hero: FC<HeroProps> = ({ title, description }) => {
     return (
-        <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4 bg-secondary">
+        <div className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 bg-secondary">
             <h1 className="text-h1-md md:text-h1 font-bold text-primary mb-6">
                 {title}
             </h1>
@@ -31,6 +31,13 @@ export const Hero: FC<HeroProps> = ({ title, description }) => {
                     Download
                 </a>
             </div>
+
+            {/* Image goes here */}
+            <img
+                src="/images/ss_pinterest_hd_downloader.webp"
+                alt="Screenshot of Pinterest HD Downloader"
+                className="max-w-full h-auto rounded-lg shadow-md mt-16"
+            />
         </div>
     );
 };
