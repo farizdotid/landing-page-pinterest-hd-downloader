@@ -1,0 +1,160 @@
+---
+import Layout from "layouts/Layout.astro";
+import { Hero } from "@libs/ui/blocks/Hero";
+import { Structure } from "@libs/ui/blocks/Structure";
+import { TechStack } from "@libs/ui/blocks/TechStack";
+import { Features } from "@libs/ui/blocks/Features";
+import { Commands } from "@libs/ui/blocks/Commands";
+import { ContactButton } from "@libs/ui/components/ContactButton";
+---
+
+<Layout
+    title="Pinterest HD Downloader"
+    description="Effortlessly download high-resolution images from Pinterest"
+>
+    <main class="bg-secondary">
+        <Hero
+            title="📷 Pinterest HD Downloader"
+            description="Effortlessly download high-resolution images from Pinterest."
+            client:load
+        />
+        <Structure
+            title="Tutorials"
+            description="Follow these simple steps to use the Pinterest Downloader:"
+            items={[
+                {
+                    name: "Step 1",
+                    type: "folder",
+                    items: [
+                        {
+                            name: "Open Pinterest",
+                            type: "file",
+                            description: "",
+                        },
+                    ],
+                },
+                {
+                    name: "Step 2",
+                    type: "folder",
+                    items: [
+                        {
+                            name: "Select the image you want to download",
+                            type: "file",
+                            description: "",
+                        },
+                    ],
+                },
+                {
+                    name: "Step 3",
+                    type: "folder",
+                    items: [
+                        {
+                            name: "Right-click on the image then select “Copy Image Address”",
+                            type: "file",
+                            description: "",
+                        },
+                    ],
+                },
+                {
+                    name: "Step 4",
+                    type: "folder",
+                    items: [
+                        {
+                            name: "Enter one or more Pinterest image URLs in the text area.",
+                            type: "file",
+                            description: "",
+                        },
+                    ],
+                },
+                {
+                    name: "Step 5",
+                    type: "folder",
+                    items: [
+                        {
+                            name: "Select a folder where the downloaded images will be saved.",
+                            type: "file",
+                            description: "",
+                        },
+                    ],
+                },
+                {
+                    name: "Step 6",
+                    type: "folder",
+                    items: [
+                        {
+                            name: "Click the Download Images button to start the process.",
+                            type: "file",
+                            description: "Monitor the progress bar to track the download status.",
+                        },
+                    ],
+                },
+                {
+                    name: "Step 7",
+                    type: "folder",
+                    items: [
+                        {
+                            name: "Finished! 🎉",
+                            type: "file",
+                            description: "",
+                        },
+                    ],
+                },
+            ]}
+            client:visible
+        />
+        <TechStack
+            title="Tech Stack"
+            description="The Pinterest HD Downloader is built using a combination of modern technologies and libraries to ensure efficiency, usability, and cross-platform compatibility:"
+            technologies={[
+                {
+                    name: "Python",
+                    description:
+                        "",
+                    link: "https://trinket.io/features/python3",
+                    benefits: [
+                        "The backbone of the application, Python provides a robust and versatile environment for scripting and automation.",
+                        "It ensures ease of development and maintenance while maintaining high performance.",
+                    ],
+                },
+                {
+                    name: "CustomTkinter",
+                    description:
+                        "",
+                    link: "https://customtkinter.tomschimansky.com/",
+                    benefits: [
+                        "A modern GUI toolkit built on top of Tkinter, providing sleek and customizable widgets with support for dark and light modes.",
+                        "It ensures a professional and visually appealing user interface that works seamlessly across all platforms.",
+                    ],
+                },
+            ]}
+            client:visible
+        />
+        <Features
+            title="Features"
+            description="The Pinterest HD Downloader offers a range of features designed to make image downloading fast, easy, and efficient:"
+            features={[
+                {
+                    title: "Batch Downloads",
+                    description:
+                        "Download multiple images simultaneously by entering their URLs in the text area.",
+                    icon: "image",
+                },
+                {
+                    title: "Batch Downloads",
+                    description:
+                        "Ideal for saving time when dealing with large collections of images.",
+                    icon: "image",
+                },
+                {
+                    title: "Automatic Resolution Replacement",
+                    description:
+                        "Ensures you always get the best possible quality without manual intervention.",
+                    icon: "image",
+                },
+            ]}
+            client:visible
+        />
+        
+        <ContactButton client:visible />
+    </main>
+</Layout>
