@@ -1,6 +1,6 @@
 import { type FC } from "react";
-import PreviewPng from "./preview.webp";
-import HeroImg from "./hero-img.webp";
+import PreviewPng from "./ss_pinterest_hd_downloader.webp";
+import HeroImg from "./icon_tools_webp.webp";
 import Logo from "./icon_tools_webp.webp";
 
 export const images = {

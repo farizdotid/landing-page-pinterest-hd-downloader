@@ -1,6 +1,7 @@
 import { type FC } from "react";
 import { ArrowRight } from "lucide-react";
 
+
 type HeroProps = {
     title: string;
     description: string;
@@ -8,7 +9,7 @@ type HeroProps = {
 
 export const Hero: FC<HeroProps> = ({ title, description }) => {
     return (
-        <div className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 bg-secondary">
+        <div className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 bg-secondary mt-16">
             <h1 className="text-h1-md md:text-h1 font-bold text-primary mb-6">
                 {title}
             </h1>
