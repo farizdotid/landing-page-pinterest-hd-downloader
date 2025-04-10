@@ -23,12 +23,12 @@ export const Hero: FC<HeroProps> = ({ title, description }) => {
                     Explore Features <ArrowRight size={20} />
                 </a>
                 <a
-                    href="https://github.com/codexcodethemes/astro-starter"
+                    href="https://drive.google.com/drive/folders/1olkdGgagf7cKTdNvdh1skiw2jF547Lyh?usp=sharing"
                     className="flex items-center gap-2 bg-primary text-secondary px-6 py-3 rounded-lg hover:opacity-90 transition-all"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Get Started
+                    Download
                 </a>
             </div>
         </div>
