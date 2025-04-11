@@ -17,6 +17,18 @@ import { ContactButton } from "@libs/ui/components/ContactButton";
             description="Effortlessly download high-resolution images from Pinterest."
             client:load
         />
+
+        <!-- YouTube Embed Below -->
+        <div class="aspect-video w-full max-w-4xl mx-auto">
+            <iframe
+                class="w-full h-full rounded-xl shadow-lg"
+                src="https://www.youtube.com/embed/JDV6kWONl_k?list=PLNfWJuIoL0ZEr2SD1KBwY5lS-pWVZNzw1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
         <Structure
             title="Tutorials"
             description="Follow these simple steps to use the Pinterest Downloader:"
@@ -83,7 +95,8 @@ import { ContactButton } from "@libs/ui/components/ContactButton";
                         {
                             name: "Click the Download Images button to start the process.",
                             type: "file",
-                            description: "Monitor the progress bar to track the download status.",
+                            description:
+                                "Monitor the progress bar to track the download status.",
                         },
                     ],
                 },
@@ -101,14 +114,14 @@ import { ContactButton } from "@libs/ui/components/ContactButton";
             ]}
             client:visible
         />
+
         <TechStack
             title="Tech Stack"
             description="The Pinterest HD Downloader is built using a combination of modern technologies and libraries to ensure efficiency, usability, and cross-platform compatibility:"
             technologies={[
                 {
                     name: "Python",
-                    description:
-                        "",
+                    description: "",
                     link: "https://trinket.io/features/python3",
                     benefits: [
                         "The backbone of the application, Python provides a robust and versatile environment for scripting and automation.",
@@ -117,8 +130,7 @@ import { ContactButton } from "@libs/ui/components/ContactButton";
                 },
                 {
                     name: "CustomTkinter",
-                    description:
-                        "",
+                    description: "",
                     link: "https://customtkinter.tomschimansky.com/",
                     benefits: [
                         "A modern GUI toolkit built on top of Tkinter, providing sleek and customizable widgets with support for dark and light modes.",
@@ -153,7 +165,7 @@ import { ContactButton } from "@libs/ui/components/ContactButton";
             ]}
             client:visible
         />
-        
+
         <ContactButton client:visible />
     </main>
 </Layout>
